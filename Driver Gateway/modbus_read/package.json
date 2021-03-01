@@ -1,0 +1,29 @@
+{
+  "name": "modbus_read",
+  "version": "1.0.0",
+  "description": "",
+  "main": "core.js",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "clear": "^0.1.0",
+    "cors": "^2.8.5",
+    "convert-endianness": "^1.0.0",
+    "express": "^4.17.1",
+    "getmac": "^5.16.0",
+    "infinite-loop": "^0.2.2",
+    "is-online": "^8.4.0",
+    "jwt-simple": "^0.5.6",
+    "mqtt": "^4.1.0",
+    "node-datetime": "^2.1.2",
+    "node-schedule": "^2.0.0",
+    "pg": "^8.3.0",
+    "socket.io-client": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
