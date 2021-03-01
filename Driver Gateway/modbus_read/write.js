@@ -25,7 +25,7 @@ var address = {
     'tss': '0004',
     'amonia': '0006',
     'cod': '0008',
-    'flow_meter': '0011'
+    'flow_meter': '0010'
 };
 
 
