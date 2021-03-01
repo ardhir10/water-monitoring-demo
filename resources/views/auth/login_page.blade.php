@@ -78,7 +78,7 @@
                     </div>
                     <button type="submit" class="btn btn-login btn-block" style="">Sign In</button>
 
-                    <div class="mg-t-60 tx-center">Powered by <a href="goiot.id" class="tx-info">
+                    <div class="mg-t-60 tx-center">Powered by:<a href="goiot.id" class="tx-info">
                             <img src="{{asset('backend/goiot.png')}}" alt="" style="max-width: 100px;">
                         </a></div>
                 </form>
