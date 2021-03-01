@@ -323,7 +323,7 @@
             confirmButtonText: 'Yes, Restart it!',
             showLoaderOnConfirm: true,
             preConfirm: () => {
-                return axios.get('http://{{$global_setting->host_ip}}:3000/restart')
+                return axios.get('{{$global_setting->host_ip}}:3000/restart')
                     .then(function (response) {
                         if (response.data.status == 200) {
                             Swal.fire(
