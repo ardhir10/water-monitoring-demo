@@ -38,7 +38,7 @@ class TypeAssetController extends Controller
 
         $request->validate([
             'name' => ['required'],
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
 
         ]);
 
