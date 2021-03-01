@@ -126,7 +126,7 @@
             hostSocket = host
         }
         console.log('HOST SOCKETNYA : ',hostSocket)
-        const socket = io(`${hostSocket}:{{$global_setting->websocket_port}}`, {transports: ['websocket']});
+        const socket = io(`${hostSocket}:{{$global_setting->websocket_port}}`);
     </script>
     @stack('js')
     <script>
