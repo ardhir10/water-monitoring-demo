@@ -58,7 +58,6 @@ io.on("connection", function (socket) {
     });
     socket.join("all");
     // socket.join("all");
-
     // socket.emit('news', {
     // 	hello: 'world'
     // });

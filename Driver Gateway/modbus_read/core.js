@@ -9,6 +9,7 @@ var exec = require('child_process').exec;
 const util = require('util');
 // const exec = util.promisify(require('child_process').exec);
 var clear = require('clear');
+var sendTelegram = require('./sendTelegram.js')
 
 
 // ----- GLOBAL CONFIG
@@ -468,7 +469,7 @@ function ModbusRead(iterator, optns, addressList) {
             // --- Realtime Websocket
             
             sendSocket(deviceRes[iterator], hostWebsocket);
-
+            sendTelegram(deviceRes[iterator])
             // -----  KIRIM WEBSOCKET
             deviceRes[iterator]['controller'] = iterator
             if (logging) {
