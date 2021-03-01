@@ -220,7 +220,6 @@ function ModbusRead(iterator, optns, addressList) {
             dataLogs['real']['tstamp'] = dateTime 
             dataLogs['maintenance']['tstamp'] = dateTime 
 
-            sendTelegram(dateTime + "INSERT DATABASE")
 
             console.log('--->[\x1b[35mDATETIME\x1b[0m] ' + dateTime)
             // ----- save to database log and logs_report
