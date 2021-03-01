@@ -10,7 +10,7 @@
             <div class="wd-100p ht-100p   pd-5 pd-x-15">
 
 <!--                 <img style="width:100px;" class="img-fluid" src="{{asset('/backend/images/logo/'.$global_setting->logo)}}" alt=""> -->
-            <p style="font-size:17px; margin-top:15px;"> Water Monitoring | {{env('app_name')}} </p>
+            <p style="font-size:17px; margin-top:15px;"> Water Monitoring | {{env('SUB_NAME')}} </p>
             </div>
             {{-- <span class="tx-18"> EHESS</span> --}}
         </div>

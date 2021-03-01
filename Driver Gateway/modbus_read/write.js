@@ -3,6 +3,8 @@
 
 const Modbus = require('jsmodbus')
 const net = require('net')
+var sendTelegram = require('./sendTelegram.js')
+
 const socket = new net.Socket()
 const options = {
     'host': '127.0.0.1',
@@ -57,7 +59,9 @@ socket.on('connect', function () {
                   // resp will look like { fc : 16, startAddress: 4, quantity: 4 }
                   console.log(randomvalue);
                   // console.log(resp);
-              }, console.error);
+              }, function () {
+                  sendTelegram("WWT (WRITE VALUE ERROR)")
+              });
           }
         
     }
