@@ -59,7 +59,7 @@ class TypeAssetController extends Controller
 
             return redirect('settings/asset/type')->with(['create' => 'Data saved successfully!']);
         } catch (\Throwable $th) {
-            return redirect('settings/asset/type')->with(['danger' => 'Failed ! ' . $th->getMessage()]);
+            return redirect('settings/asset/type/create')->with(['danger' => 'Failed ! ' . $th->getMessage()]);
         }
     }
 
