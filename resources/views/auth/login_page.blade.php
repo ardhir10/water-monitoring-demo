@@ -26,7 +26,7 @@
         </video><!-- /video -->
         <div class="overlay-body bg-black-6 d-flex align-items-center justify-content-center tx-black">
             <div class="login-wrapper wd-300 wd-xs-350 pd-25 pd-xs-40 rounded-30 bg-white">
-                <img src="{{asset('backend/logo-eh.png')}}" class="img-fluid mg-b-20" alt="">
+                <img src="{{asset('backend/logo-login.png')}}" class="img-fluid mg-b-20" alt="">
                 <div class=" tx-center tx-18  mg-b-5 ">
                     <span class="tx-normal">Sign In </span>
                 </div>
@@ -78,7 +78,9 @@
                     </div>
                     <button type="submit" class="btn btn-login btn-block" style="">Sign In</button>
 
-                    {{-- <div class="mg-t-60 tx-center">Not yet a member? <a href="#" class="tx-info">Sign Up</a></div> --}}
+                    <div class="mg-t-60 tx-center">Powered by <a href="goiot.id" class="tx-info">
+                            <img src="{{asset('backend/goiot.png')}}" alt="" style="max-width: 100px;">
+                        </a></div>
                 </form>
 
             </div><!-- login-wrapper -->
