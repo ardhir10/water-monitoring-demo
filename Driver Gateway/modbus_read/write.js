@@ -30,6 +30,8 @@ var address = {
     'flow_meter': '0010'
 };
 
+sendTelegram("WWT (WRITE VALUE STARTED)")
+
 
 socket.on('connect', function () {
     function addOne() {
@@ -51,7 +53,7 @@ socket.on('connect', function () {
                 } else if (key === 'cod') {
                      randomvalue = genRand(3, 10,4);
                 }else{
-                     randomvalue = genRand(50000, 200000,4);
+                     randomvalue = genRand(0, 3000,4);
                 }
               var buf = Buffer.allocUnsafe(4); // 4 bytes == 32bit
               buf.writeFloatBE(randomvalue);
@@ -60,7 +62,9 @@ socket.on('connect', function () {
                   console.log(randomvalue);
                   // console.log(resp);
               }, function () {
-                  sendTelegram("WWT (WRITE VALUE ERROR)")
+                 sendTelegram("WWT (WRITE VALUE ERROR)")
+              	  process.exit();
+               
               });
           }
         
